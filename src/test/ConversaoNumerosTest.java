@@ -9,15 +9,11 @@ import modelo.ModeloConversao;
 public class ConversaoNumerosTest {
 	
 	@Test
-			public void deveConverterQualquerNumeroDeUmANove(ModeloConversao unidades){
+			public void deveConverterQualquerNumeroDeUmANove(){
 				
 		ModeloConversao modeloConversao = new ModeloConversao();
-			modeloConversao.unidade = 5;
-			modeloConversao.unidades = "V";
-			 
-			modeloConversao.converte(5);
 			 
 			 
-				Assert.assertEquals("V", modeloConversao);
+				Assert.assertEquals(5, modeloConversao);
 	}
 }
